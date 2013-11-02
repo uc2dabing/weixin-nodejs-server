@@ -2,3 +2,4 @@
 node_modules/
 access.log
 nohup.out
+*.log

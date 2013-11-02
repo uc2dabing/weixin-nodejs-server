@@ -26,6 +26,7 @@ app.use(weixinAuth);
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
+
 app.use(xmlBodyParse);
 
 app.use(express.methodOverride());
