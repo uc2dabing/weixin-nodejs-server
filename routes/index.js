@@ -12,8 +12,8 @@ exports.index = function(req, res){
 
 	dataParse.parseXml(req.xmlBody, function(data){
 
-		console.log(data.MsgType[0]);
-		 switch(data.MsgType[0]){
+		console.log(data.MsgType);
+		 switch(data.MsgType){
 			
 			case 'event' : dataWrapper.event(data, function(result){ res.end(result); }); break;
 
